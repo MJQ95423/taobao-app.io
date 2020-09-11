@@ -1,3 +1,5 @@
-# taobao-app.io
+
 ## 仿淘宝移动端App
-# 用到的技术栈有js、html、css
+1. 基于div+css页面布局
+2. 通过js(jQuery)实现效果（例如轮播图以及回到顶部）
+3. 通过js(jQuery)实现效果（例如菜单栏下拉）
