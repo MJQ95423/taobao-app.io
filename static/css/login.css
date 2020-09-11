@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+
+html{ height: 100%;}
+body{ height: 100%; background: #fff;}
+
+
+/**********登录、注册部分**********/
+/**************************/
+/******登录背景******/
+.login{ width: 100%; min-height: 100%; background: url(../image/login_bg.jpg) no-repeat; background-size: cover; background-attachment: fixed; position: relative;}
+
+
+/******切换语言******/
+/*------显示当前语言------*/
+.login .language{ width: auto; position: relative;}
+.login .language .language-box{ width: 1.2rem; height: 1.2rem; border-radius: 50%; border: rgba(255,255,255,.3) .05rem solid; overflow: hidden; display: block;box-sizing: content-box; position: absolute; right: .5rem; top: .5rem;}
+
+i.language-chn{ width: 1.2rem; height: 1.2rem;  background: url(../image/flag_china.svg) no-repeat center; background-size: 100%; display: block;}
+i.language-en{ width: 1.2rem; height: 1.2rem;  background: url(../image/flag_uk.svg) no-repeat center; background-size: 100%; display: block;}
+
+/*------选择语言的框------*/
+.choose-lang{ width: 100%; height: 100%; background: none; position: fixed; left: 0; top: 0; display: none;z-index: 99;}
+.choose-lang .choose-lang-box{ width: 4.8rem; background: rgba(104,45,252,.7); border-radius: .2rem; padding: .3rem .5rem; position: absolute; right: .5rem; top: 2.2rem; }
+.choose-lang .choose-lang-box:after{ content: ''; border-left: .2rem solid transparent; border-right: .2rem solid transparent; border-bottom: .2rem solid rgba(104,45,252,.7); position: absolute; right: .5rem; top: -.2rem;}
+
+.choose-lang .choose-lang-box .choose-lang-btn{ width:100%; overflow: hidden; padding: .2rem 0;}
+.choose-lang .choose-lang-box .choose-lang-btn i, .login .language .choose-lang .choose-lang-btn span{ float: left;}
+.choose-lang .choose-lang-box .choose-lang-btn span{ line-height: 1.2rem; font-size: .56rem; color: #fff; display: block; margin-left: .3rem;}
+
+/******logo******/
+.login .login-logo{ width: 100%; text-align: center;}
+.login .login-logo img{ width: 4rem; height: 4rem;}
+
+
+/******登录表单******/
+/*------主体------*/
+.login .login-form{ width: 92%; background: rgba(255,255,255,.3); border-radius: .5rem; overflow: hidden; padding: 1.1rem .6rem .8rem .6rem; position: absolute; left: 4%; top: 4rem; z-index: 9;}
+.login .login-form h1{ font-size: .84rem; color: #fff; text-align: center; padding: 0 0 .5rem 0;}
+
+/*------表单样式------*/
+.login .login-form .login-form-group{ width: 100%; border: rgba(255,255,255,.5) 1px solid; border-radius: .9rem; overflow: hidden; margin-top: .5rem;}
+
+.login .login-form .login-form-group label, .login .login-form .login-form-group .input-group{ height: 1.8rem; float: left; position: relative;}
+
+.login .login-form .login-form-group label{ width: 4.2rem; line-height: 1.8rem; font-size: .56rem; color: #fff; padding-left: 1.4rem; position: relative;}
+.login .login-form .login-form-group label:before{ width: 1.4rem; height: 1.8rem; content: ''; background-position: center; background-repeat: no-repeat; background-size: .8rem auto; position: absolute; left: .1rem; top: 0;}
+
+.login .login-form .login-form-group input{ width: 8rem; height: 100%; font-size: .52rem; color: #fff;}
+.login .login-form .login-form-group input::-webkit-input-placeholder{ color: #ffde00;}
+
+/*------清除按钮------*/
+.login .login-form .login-form-group .clear-keyword{ width: 1rem; height: 1rem; background: url(../image/icon_clear.svg) no-repeat center; background-size: .8rem; opacity: .6; display: block; position: absolute; right: .15rem; top: .4rem; display: none;}
+
+/*------验证码------*/
+.login .login-form .form-code img{ width: 2.5rem; height: 1.2rem; position: absolute; top: .3rem; right: 0;}
+.login .login-form .form-code .clear-keyword{ right: 2.7rem;}
+
+/*------图标------*/
+.login-form-group label.icon-phone:before{ background-image: url(../image/login_icon_1.svg);}
+.login-form-group label.icon-pw:before{ background-image: url(../image/login_icon_2.svg);}
+.login-form-group label.icon-code:before{ background-image: url(../image/login_icon_3.svg);}
+
+/*------提交------*/
+.login .login-form .login-submit{ padding-top:2rem;}
+.login .login-form .login-submit button{ width: 100%; height: 1.6rem; font-size: .64rem; color: #fff; text-align: center; background: #ffba00; border-radius: .8rem;}
+
+
+/******链接******/
+.login .login-form .login-links{ width: 100%; font-size: .5rem; overflow: hidden; padding: .5rem .3rem;}
+.login .login-form .login-links a{ display: block; float: left;}
+.login .login-form .login-links a.login-links-1{ color:#ffde00;}
+.login .login-form .login-links a.login-links-2{ color:#ffde00; float: right;}
+
+
+/******下载APP******/
+
+
+/******注册******/
+.register{ width: 100%; overflow: hidden; padding: .5rem .2rem;}
+.register .form-group{ border-bottom:#e5e5e5 1px solid;}
+.register .form-submit{ margin-top: 2.2rem;}
